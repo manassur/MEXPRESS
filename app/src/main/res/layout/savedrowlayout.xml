@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            app:roundRect_bottomLeftDiameter="10dp"
+            app:roundRect_topLeftDiameter="10dp">
+
+            <ImageView
+                android:id="@+id/savedImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/savedimage"
+                android:scaleType="fitXY"
+                android:contentDescription=""/>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/techText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circularstd_book"
+                android:text="Tech"
+                android:padding="3dp"
+                android:gravity="center"
+                android:background="@drawable/textviewframe"
+                android:textColor="#FF3F00"
+                android:layout_marginBottom="7dp"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/circularstd_medium"
+                android:text="Google saw more than 18 million daily malware and phishing emails related to COVID-19 last week."
+                android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:layout_marginStart="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/vergeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="theVerge"
+                    android:fontFamily="@font/circularstd_medium"
+                    android:textColor="#767676"
+                    android:layout_weight="0.9"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/savedIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_weight="0.1"
+                    android:contentDescription=""
+                    app:srcCompat="@drawable/savedicon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

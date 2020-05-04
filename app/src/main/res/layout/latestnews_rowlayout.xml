@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    android:elevation="3dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            app:roundRect_bottomLeftDiameter="10dp"
+            app:roundRect_topLeftDiameter="10dp">
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:transitionName="feedimage"
+                android:src="@drawable/image2" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewframe"
+                android:fontFamily="@font/circularstd_book"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Tech"
+                android:textColor="#FF3F00"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="2dp"
+                android:fontFamily="@font/circularstd_medium"
+                android:text="Google saw more than 18 million daily malware and phishing emails related to COVID-19 last week"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/circularstd_medium"
+                    android:text="theMerge"
+                    android:textColor="#6F6B69"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/circularstd_medium"
+                    android:text="Today at 5:30pm"
+                    android:textColor="#ADAAA9"
+                    android:gravity="right|center"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

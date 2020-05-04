@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.mexpress.NewsPageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/imageframe"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.5"
+                app:roundRect_topLeftDiameter="20dp"
+                app:roundRect_bottomLeftDiameter="20dp"
+                app:roundRect_topRightDiameter="20dp"
+                android:elevation="3dp">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@color/background"
+                    android:transitionName="feedimage" />
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/imageframe2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                app:roundRect_topLeftDiameter="20dp"
+                app:roundRect_bottomLeftDiameter="0dp"
+                app:roundRect_topRightDiameter="20dp"
+                app:roundRect_bottomRightDiameter="20dp"
+                android:elevation="3dp">
+
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:background="@color/colorAccent"
+                    android:transitionName="feedimage" />
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="17sp"
+        android:text="See the expression of others."
+        android:textColor="#350E00"
+        android:fontFamily="@font/circularstd_book" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/featuredrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#F8F8FC"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp">
+
+        <FrameLayout
+            android:id="@+id/viewlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/harmburger"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_categories"
+            android:textAllCaps="false"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:itemIconSize="18dp"
+            app:itemIconTint="@drawable/tabiconselector"
+            app:itemTextColor="@drawable/tabtextselector"
+            app:itemTextAppearanceActive="@style/ActiveBottomNavigationViewTextStyle"
+            app:itemTextAppearanceInactive="@style/InActiveBottomNavigationViewTextStyle"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</RelativeLayout>

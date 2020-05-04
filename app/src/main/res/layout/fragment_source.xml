@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8FC"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="News Sources"
+        android:textColor="#FF3F00"
+        android:fontFamily="@font/circularstd_bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="17sp"
+        android:text="Check news by checking through your favourite news site or blog."
+        android:textColor="#350E00"
+        android:fontFamily="@font/circularstd_book"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        android:elevation="1dp"
+        android:theme="@style/searchStyle"
+        android:background="@drawable/searchroundcorners"
+        android:searchIcon="@null"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search sources..." >
+    </SearchView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsSourceRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="5dp"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

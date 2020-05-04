@@ -1,0 +1,28 @@
+<resources>
+    <string name="version">FeedMuster 1.2</string>
+    <string name="app_name">MXPRESS</string>
+    <string name="seeall"> <u>See All</u></string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_more">more</string>
+    <string name="title_activity_bottom_bar">BottomBar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fashion">Fashion</string>
+    <string name="finance">Finance</string>
+    <string name="health">Health</string>
+    <string name="politics">Politics</string>
+    <string name="sport">Sport</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="crime">Crime</string>
+    <string name="business">Business</string>
+    <string name="technology">Technology</string>
+
+    <!-- VIDEO TRIMMER -->
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="short_seconds">sec</string>
+    <string name="megabyte">MB</string>
+    <string name="kilobyte">KB</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.app.mexpress.WelcomeActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/giftbox"
+        android:textAllCaps="false"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:text="Welcome to FeedMuster"
+            android:textColor="#000"
+            android:fontFamily="@font/circularstd_medium"/>
+
+        <TextView
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="We went around to bring the best of all news, all in one big box, just for you, how you love it."
+            android:textColor="#000"
+            android:fontFamily="@font/circularstd_light"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Select your Country to personalize your feed"
+            android:textColor="#FF3F00"
+            android:fontFamily="@font/circularstd_medium"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/countrylistframe"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Select Country..."
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:fontFamily="@font/circularstd_light"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startReadingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start reading"
+            android:textColor="#fff"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="@drawable/welcomebutton"
+            android:fontFamily="@font/circularstd_medium"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_right_chevron1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
